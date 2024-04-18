@@ -4,3 +4,50 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --bg-color: #fff;
+    --main-color: #000000;
+    --font-family: "Inter", sans-serif;
+    --second-family: "PressStart2P-Regular", sans-serif;
+    --gradient-lines-color: #d3d3d3;
+    --top-gradient-color: #e7e7e7;
+    --bot-gradient-color: #1a1a1a;
+    --theme-button-accent-color: rgba(0, 0, 0, 0.6);
+    --button-text-color: #fff;
+    --contour-heart: black;
+    --sparks-heart: #FF0000;
+    --black-color-heart: black;
+    --red-color-heart: #FF0000;
+}
+:root.theme-dark {
+    --font-family: "Inter", sans-serif;
+    --second-family: "PressStart2P-Regular", sans-serif;
+    --bg-color: #000000;
+    --main-color: #00CC14;
+    --gradient-lines-color: #000;
+    --top-gradient-color: #007f0c;
+    --bot-gradient-color: #004306;
+    --theme-button-accent-color: rgba(0, 204, 20, 0.6);
+    --button-text-color: #00CC14;
+    --contour-heart: #00CC14;
+    --sparks-heart: #FF0000;
+    --black-color-heart: black;
+    --red-color-heart: #FF0000;
+}
+@media (prefers-color-scheme: dark) {
+    :root.theme-auto {
+        --font-family: "Inter", sans-serif;
+        --second-family: "PressStart2P-Regular", sans-serif;
+        --bg-color: #000000;
+        --main-color: #00CC14;
+        --gradient-lines-color: #000;
+        --top-gradient-color: #007f0c;
+        --bot-gradient-color: #004306;
+        --theme-button-accent-color: rgba(0, 204, 20, 0.6);
+        --button-text-color: #00CC14;
+        --contour-heart: #00CC14;
+        --sparks-heart: #FF0000;
+        --black-color-heart: black;
+        --red-color-heart: #FF0000;
+    }
+}

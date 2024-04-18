@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-color: #fff;
+  --main-color: #000000;
+  --font-family: "Inter", sans-serif;
+  --second-family: "PressStart2P-Regular", sans-serif;
+  --gradient-lines-color: #d3d3d3;
+  --top-gradient-color: #e7e7e7;
+  --bot-gradient-color: #1a1a1a;
+  --theme-button-accent-color: rgba(0, 0, 0, 0.6);
+  --button-text-color: #fff;
+  --contour-heart: black;
+  --sparks-heart: #FF0000;
+  --black-color-heart: black;
+  --red-color-heart: #FF0000;
+}
