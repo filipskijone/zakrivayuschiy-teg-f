@@ -7,8 +7,6 @@
 :root.theme-light {
     --bg-color: #fff;
     --main-color: #000000;
-    --font-family: "Inter", sans-serif;
-    --second-family: "PressStart2P-Regular", sans-serif;
     --gradient-lines-color: #d3d3d3;
     --top-gradient-color: #e7e7e7;
     --bot-gradient-color: #1a1a1a;
@@ -20,8 +18,6 @@
     --red-color-heart: #FF0000;
 }
 :root.theme-dark {
-    --font-family: "Inter", sans-serif;
-    --second-family: "PressStart2P-Regular", sans-serif;
     --bg-color: #000000;
     --main-color: #00CC14;
     --gradient-lines-color: #000;
@@ -36,8 +32,6 @@
 }
 @media (prefers-color-scheme: dark) {
     :root.theme-auto {
-        --font-family: "Inter", sans-serif;
-        --second-family: "PressStart2P-Regular", sans-serif;
         --bg-color: #000000;
         --main-color: #00CC14;
         --gradient-lines-color: #000;
