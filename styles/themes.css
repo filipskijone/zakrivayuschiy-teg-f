@@ -5,52 +5,52 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-    --bg-color: #fff;
-    --main-color: #000000;
-    --gradient-lines-color: #d3d3d3;
-    --top-gradient-color: #e7e7e7;
-    --bot-gradient-color: #1a1a1a;
-    --theme-button-accent-color: rgba(0, 0, 0, 0.6);
-    --button-text-color: #fff;
-    --contour-heart: black;
-    --sparks-heart: #FF0000;
-    --black-color-heart: black;
-    --red-color-heart: #FF0000;
-    --webkit-text-stroke-color: 2px rgba(255, 255, 255, 0.5);
-    --text-shadow-color: rgba(255, 255, 255, 0.5);
-    --main-text-color: #000000;
+  --bg-color: #fff;
+  --main-color: #000000;
+  --gradient-lines-color: #d3d3d3;
+  --top-gradient-color: #e7e7e7;
+  --bot-gradient-color: #1a1a1a;
+  --theme-button-accent-color: rgba(0, 0, 0, 0.6);
+  --button-text-color: #fff;
+  --contour-heart: black;
+  --sparks-heart: #ff0000;
+  --black-color-heart: black;
+  --red-color-heart: #ff0000;
+  --webkit-text-stroke-color: 2px rgba(255, 255, 255, 0.5);
+  --text-shadow-color: rgba(255, 255, 255, 0.5);
+  --main-text-color: #000000;
 }
 :root.theme-dark {
+  --bg-color: #000000;
+  --main-color: #00cc14;
+  --gradient-lines-color: #000;
+  --top-gradient-color: #007f0c;
+  --bot-gradient-color: #004306;
+  --theme-button-accent-color: rgba(0, 204, 20, 0.6);
+  --button-text-color: #00cc14;
+  --contour-heart: #00cc14;
+  --sparks-heart: #ff0000;
+  --black-color-heart: black;
+  --red-color-heart: #ff0000;
+  --webkit-text-stroke-color: 1px rgba(0, 0, 0, 0.5);
+  --text-shadow-color: rgba(0, 0, 0, 0.5);
+  --main-text-color: #00cc14;
+}
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
     --bg-color: #000000;
-    --main-color: #00CC14;
+    --main-color: #00cc14;
     --gradient-lines-color: #000;
     --top-gradient-color: #007f0c;
     --bot-gradient-color: #004306;
     --theme-button-accent-color: rgba(0, 204, 20, 0.6);
-    --button-text-color: #00CC14;
-    --contour-heart: #00CC14;
-    --sparks-heart: #FF0000;
+    --button-text-color: #00cc14;
+    --contour-heart: #00cc14;
+    --sparks-heart: #ff0000;
     --black-color-heart: black;
-    --red-color-heart: #FF0000;
+    --red-color-heart: #ff0000;
     --webkit-text-stroke-color: 1px rgba(0, 0, 0, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
-    --main-text-color: #00CC14;
-}
-@media (prefers-color-scheme: dark) {
-    :root.theme-auto {
-        --bg-color: #000000;
-        --main-color: #00CC14;
-        --gradient-lines-color: #000;
-        --top-gradient-color: #007f0c;
-        --bot-gradient-color: #004306;
-        --theme-button-accent-color: rgba(0, 204, 20, 0.6);
-        --button-text-color: #00CC14;
-        --contour-heart: #00CC14;
-        --sparks-heart: #FF0000;
-        --black-color-heart: black;
-        --red-color-heart: #FF0000;
-        --webkit-text-stroke-color: 1px rgba(0, 0, 0, 0.5);
-        --text-shadow-color: rgba(0, 0, 0, 0.5);
-        --main-text-color: #00CC14;
-    }
+    --main-text-color: #00cc14;
+  }
 }

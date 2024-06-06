@@ -103,7 +103,7 @@
   transform: scaleX(0);
   transition: 0.3s linear ease;
 }
-.theme-menu__button:focus-visible {
+.theme-menu__button:focus {
   outline: none;
 }
 .theme-menu__button:hover {
@@ -249,12 +249,10 @@
 }
 .like-icon:focus {
   outline: none;
+  border: none;
 }
 .like-icon:hover {
   cursor: pointer;
-}
-.like-icon:focus {
-  border: none;
 }
 .main-buttons:focus-visible {
   outline: none;
