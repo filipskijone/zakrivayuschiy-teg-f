@@ -37,7 +37,7 @@
   --main-text-color: #00cc14;
 }
 @media (prefers-color-scheme: dark) {
-  :root.theme-auto {
+  :root {
     --bg-color: #000000;
     --main-color: #00cc14;
     --gradient-lines-color: #000;
