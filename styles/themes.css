@@ -7,6 +7,8 @@
 :root.theme-light {
   --bg-color: #fff;
   --main-color: #000000;
+  --border-lines-color: #000;
+  --button-bg-color: #000;
   --gradient-lines-color: #d3d3d3;
   --top-gradient-color: #e7e7e7;
   --bot-gradient-color: #1a1a1a;
@@ -23,6 +25,8 @@
 :root.theme-dark {
   --bg-color: #000000;
   --main-color: #00cc14;
+  --border-lines-color: #00cc14;
+  --button-bg-color: #00cc14;
   --gradient-lines-color: #000;
   --top-gradient-color: #007f0c;
   --bot-gradient-color: #004306;
@@ -40,6 +44,8 @@
   :root {
     --bg-color: #000000;
     --main-color: #00cc14;
+    --border-lines-color: #00cc14;
+    --button-bg-color: #00cc14;
     --gradient-lines-color: #000;
     --top-gradient-color: #007f0c;
     --bot-gradient-color: #004306;

@@ -73,7 +73,7 @@
                 </p>
 
                 <div class="like_buttons">
-                  <button type="button" class="like-icon">
+                  <button type="button" class="like-icon card__icon-button">
                     <svg
                       width="39"
                       height="36"
@@ -581,20 +581,20 @@
           </li>
         </ul>
       </section>
+      <section class="save_section">
+        <button
+          class="save__button main-buttons"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+        >
+          <svg viewBox="0 0 21 21" width="21" height="21" class="floppy">
+            <use href="./svg/floppy-3-min.svg#floppy1"></use>
+          </svg>
+          <span class="button__text save_text"> Сохранить на память</span>
+        </button>
+      </section>
     </main>
-    <footer class="footer">
-      <button
-        class="footer__button main-buttons"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg viewBox="0 0 21 21" width="21" height="21" class="floppy">
-          <use href="./svg/floppy-3-min.svg#floppy1"></use>
-        </svg>
-        <span class="button__text"> Сохранить на память</span>
-      </button>
-    </footer>
     <dialog id="dialog-id" class="dialog">
       <div class="dia_content">
         <svg viewBox="0 0 39 39" width="39" height="39" class="floppy_footer">

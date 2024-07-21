@@ -104,31 +104,10 @@
 .is_liked.card__like-button {
   padding: 0;
 }
-.card__like-button:hover.card__like-button::before {
-  transform: translate(-37px, -13px);
-  transition: 0.5s ease-in-out;
-  background-color: var(--main-color);
-}
-.card__like-button.card__like-button::before {
-  transform: translate(-200px, -13px);
-  transition: 0.5s ease-in-out;
-  background-color: var(--main-color);
-}
-
-.footer__button:hover.footer__button::before {
-  transform: translate(-20px, 0);
+.main-buttons:hover.main-buttons::before {
+  transform: translate(-50px, 0);
   transition: 0.5s ease-in-out;
 }
-.footer__button.footer__button::before {
-  transform: translate(-360px, 0);
+.main-buttons.main-buttons::before {
   transition: 0.5s ease-in-out;
-}
-@media (max-width: 375px) {
-  .footer__button:hover.footer__button::before {
-    transform: translate(0px, -40px);
-  }
-  .footer__button.footer__button::before {
-    transform: translate(-360px, -20px);
-    transition: 0.5s ease-in-out;
-  }
 }

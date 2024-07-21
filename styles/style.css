@@ -41,7 +41,7 @@
 .header {
   max-width: 700px;
   min-height: 368px;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--border-lines-color);
   margin: 100px auto 100px;
   display: flex;
   justify-content: end;
@@ -60,10 +60,10 @@
   font-size: clamp(3rem, 2.659rem + 1.56vw, 4.063rem);
   text-transform: uppercase;
   justify-content: center;
-  margin-top: 114px;
+  margin-top: 105px;
   gap: 20px;
   color: var(--main-text-color);
-  margin-bottom: 13px;
+  margin-bottom: 27px;
 }
 .header_tag {
   font-size: clamp(0.875rem, 0.694rem + 0.826vw, 1.438rem);
@@ -85,7 +85,8 @@
   transition: border-bottom 0.3s ease-in-out;
 }
 .theme-menu__button:focus-visible {
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--border-lines-color);
+  transition: 0.3s linear;
 }
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -116,7 +117,7 @@
 .card {
   max-width: 696px;
   margin: auto;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--border-lines-color);
   background-color: var(--bg-color);
   margin-bottom: 50px;
 }
@@ -124,7 +125,7 @@
   font-weight: 700;
   padding: 5px 10px;
   font-size: 18px;
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--border-lines-color);
 }
 .photo_content {
   max-height: 696px;
@@ -173,7 +174,6 @@
   font-size: 14px;
   color: var(--main-text-color);
   text-shadow: 1px 0 3px var(--text-shadow-color);
-  -webkit-text-stroke: var(--webkit-text-stroke-color);
 }
 @supports (mix-blend-mode: normal) {
   .decorate {
@@ -186,17 +186,11 @@
     -webkit-text-stroke: var(--webkit-text-stroke-color);
   }
 }
-@supports (text-stroke: normal) {
-  .decorate {
-    text-shadow: none;
-    text-stroke: var(--webkit-text-stroke-color);
-  }
-}
 .card_content {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--main-color);
+  border-top: 1px solid var(--border-lines-color);
 }
 .card_desc {
   display: flex;
@@ -209,11 +203,11 @@
   background-color: var(--bg-color);
   font-family: var(--second-family);
   position: relative;
-  z-index: 10;
+  z-index: 15;
   cursor: pointer;
   font-weight: 400;
   transition: box-shadow 0.3s ease-in;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--border-lines-color);
   font-size: 14px;
   overflow: hidden;
 }
@@ -226,7 +220,12 @@
   content: "";
   position: absolute;
   z-index: 12;
-  background-color: var(--main-color);
+  background-color: var(--button-bg-color);
+  width: 350px;
+  height: 100px;
+  transform: translateX(-385px);
+  top: 0;
+  left: 35px;
 }
 .like_buttons {
   display: flex;
@@ -248,13 +247,7 @@
   padding: 0;
   min-width: 130px;
   min-height: 38px;
-  box-shadow: none;
   margin: 5px 0;
-}
-.card__like-button::before {
-  width: 160px;
-  height: 40px;
-  transform: translate(-165px, -13px);
 }
 .like-icon {
   background-color: inherit;
@@ -266,33 +259,32 @@
   outline: none;
   border: none;
 }
+.like-icon:focus-visible {
+  border: 2px solid var(--border-lines-color);
+}
 .like-icon:hover {
   cursor: pointer;
 }
 .main-buttons:focus-visible {
   outline: none;
-  box-shadow: 2px 2px var(--main-color);
+  box-shadow: 2px 2px var(--border-lines-color);
 }
-.footer {
+.save_section {
   background-color: var(--bg-color);
   margin: auto;
   max-width: 335px;
   margin-bottom: 105px;
 }
-.footer__button::before {
-  width: 340px;
-  height: 55px;
-}
-.footer__button {
+.save__button {
   min-width: 338px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 15px 15px 20px;
-  gap: 10px;
+  padding: 15px 15px 15px 18px;
+  gap: 8px;
 }
-.footer__button:focus-visible {
-  box-shadow: 4px 4px var(--main-color);
+.save_text {
+  top: -2px;
+}
+.save__button:focus-visible {
+  box-shadow: 4px 4px var(--border-lines-color);
 }
 .floppy {
   position: relative;
@@ -315,7 +307,7 @@
   opacity: 0;
 }
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.7);
+  background-color: rgb(0 0 0 / 0.75);
 }
 .dia_content {
   display: flex;
@@ -330,20 +322,7 @@ dialog::backdrop {
 .dia_button {
   min-width: 293px;
   padding: 10px;
-  align-self: self-end;
-  justify-self: center;
   text-transform: uppercase;
-}
-.dia_button::before {
-  width: 320px;
-  height: 42px;
-  right: 290px;
-  bottom: -5px;
-}
-.dia_button:hover.dia_button::before {
-  transform: translate(300px, 0);
-  transition: 0.5s ease-in-out;
-  z-index: 12;
 }
 .dia_text {
   max-width: 198px;
@@ -356,9 +335,12 @@ dialog::backdrop {
 @media (max-width: 375px) {
   .header {
     max-width: 375px;
+    justify-content: start;
+    min-height: auto;
   }
   .logo-group {
-    margin-top: 100px;
+    margin-top: 95px;
+    margin-bottom: 15px;
   }
   .decorate {
     top: 23px;
@@ -367,7 +349,7 @@ dialog::backdrop {
   .card_image {
     max-width: 371px;
   }
-  .footer {
+  .save_section {
     max-width: 306px;
     margin-bottom: 100px;
   }
@@ -375,17 +357,14 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
   }
-  .footer__button::before {
-    transform: translate(0, -40px);
-    min-height: 140px;
-  }
   .card_title {
     font-weight: 500;
   }
-  .footer__button {
+  .save__button {
     min-height: 84px;
     flex-direction: column;
     padding: 15px 18px;
+    min-width: 306px;
   }
 }
 @supports (font-variation-settings: normal) {

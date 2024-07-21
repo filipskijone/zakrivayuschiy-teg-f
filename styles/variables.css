@@ -2,6 +2,8 @@
 :root {
   --bg-color: #fff;
   --main-color: #000000;
+  --border-lines-color: #000;
+  --button-bg-color: #000;
   --font-family: "Inter", sans-serif;
   --second-family: "PressStart2P-Regular", sans-serif;
   --gradient-lines-color: #d3d3d3;
