@@ -75,6 +75,7 @@
 }
 .theme-menu__button {
   background-color: inherit;
+  position: relative;
   border: none;
   color: var(--main-text-color);
   text-transform: uppercase;
@@ -83,10 +84,6 @@
   margin-top: 8px;
   border-bottom: none;
   transition: border-bottom 0.3s ease-in-out;
-}
-.theme-menu__button:focus-visible {
-  border-bottom: 2px solid var(--border-lines-color);
-  transition: 0.3s linear;
 }
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -102,8 +99,21 @@
   transform: translateX(-20px);
 }
 .theme-menu__button::after {
-  transform: scaleX(0);
-  transition: 0.3s linear ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 5px;
+  bottom: 0;
+  transition: 0.3s;
+}
+.theme-menu__button:focus-visible {
+  color: var(--theme-button-accent-color);
+  transition: color 0.3s;
+}
+.theme-menu__button:focus-visible.theme-menu__button::after {
+  background-color: var(--theme-button-accent-color);
+  width: 88%;
 }
 .theme-menu__button:focus {
   outline: none;
@@ -184,6 +194,11 @@
   .decorate {
     text-shadow: none;
     -webkit-text-stroke: var(--webkit-text-stroke-color);
+  }
+}
+@supports (font-variation-settings: normal) {
+  body {
+    font-weight: 400 700 785;
   }
 }
 .card_content {
