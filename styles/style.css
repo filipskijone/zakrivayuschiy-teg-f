@@ -228,7 +228,6 @@
   outline: none;
 }
 .main-buttons::before {
-  pointer-events: none;
   cursor: none;
   content: "";
   position: absolute;

@@ -38,7 +38,7 @@
   --button-text-color: #00cc14;
   --contour-heart: #00cc14;
   --sparks-heart: #ff0000;
-  --black-color-heart: black;
+  --black-color-heart: #00cc14;
   --red-color-heart: #ff0000;
   --webkit-text-stroke-color: 1px rgba(0, 0, 0, 0.5);
   --text-shadow-color: rgba(0, 0, 0, 0.5);
@@ -59,7 +59,7 @@
     --button-text-color: #00cc14;
     --contour-heart: #00cc14;
     --sparks-heart: #ff0000;
-    --black-color-heart: black;
+    --black-color-heart: #00cc14;
     --red-color-heart: #ff0000;
     --webkit-text-stroke-color: 1px rgba(0, 0, 0, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
