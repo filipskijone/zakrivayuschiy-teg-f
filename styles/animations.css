@@ -44,9 +44,11 @@
 }
 .core {
   opacity: 0;
+  fill: transparent;
 }
 .main-body {
   opacity: 0;
+  fill: transparent;
 }
 .like-icon:hover .core {
   transition: fill 0.3s linear;

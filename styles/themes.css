@@ -6,6 +6,8 @@
 */
 :root.theme-light {
   --bg-color: #fff;
+  --back-ground-color: #fff;
+  --title-weight: 700;
   --main-color: #000000;
   --border-lines-color: #000;
   --button-bg-color: #000;
@@ -24,7 +26,9 @@
 }
 :root.theme-dark {
   --bg-color: #000000;
+  --back-ground-color: #000;
   --main-color: #00cc14;
+  --title-weight: 785;
   --border-lines-color: #00cc14;
   --button-bg-color: #00cc14;
   --gradient-lines-color: #000;
@@ -43,6 +47,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000000;
+    --back-ground-color: #000;
+    --title-weight: 785;
     --main-color: #00cc14;
     --border-lines-color: #00cc14;
     --button-bg-color: #00cc14;
