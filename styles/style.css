@@ -194,11 +194,6 @@
     -webkit-text-stroke: var(--webkit-text-stroke-color);
   }
 }
-@supports (font-variation-settings: normal) {
-  body {
-    font-weight: 400;
-  }
-}
 .card_content {
   padding: 25px;
   display: flex;
@@ -209,7 +204,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  font-weight: 400;
+  font-variation-settings: "wght" 400;
   margin-bottom: 25px;
 }
 .main-buttons {
@@ -382,11 +377,5 @@ dialog::backdrop {
     gap: 8px;
     padding: 15px 18px;
     min-width: 306px;
-  }
-}
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--font-family);
-    font-weight: 400 700 785;
   }
 }

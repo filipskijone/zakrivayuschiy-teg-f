@@ -13,3 +13,9 @@
   font-weight: normal;
   font-display: swap;
 }
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--font-family);
+    font-weight: 400 700 785;
+  }
+}
