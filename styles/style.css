@@ -130,7 +130,7 @@
   margin-bottom: 50px;
 }
 .card_title {
-  font-variation-settings: var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight);
   padding: 5px 10px;
   font-size: 18px;
   border-bottom: 1px solid var(--border-lines-color, #00cc14);
@@ -373,9 +373,6 @@ dialog::backdrop {
   .floppy {
     width: 28px;
     height: 28px;
-  }
-  .card_title {
-    font-weight: 500;
   }
   .save__button {
     display: flex;
